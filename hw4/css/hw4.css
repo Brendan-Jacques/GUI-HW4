@@ -1,0 +1,62 @@
+body {
+	background-color: lightgrey;
+}
+
+input.submit {
+	/* display: none; changed to display: inline-block by field_generate(); */
+	display: none;
+	position: relative;
+	height: 50px;
+	width: 100px;
+}
+
+tbody.field {
+	display: inline-block;
+	width: 350px;
+	margin: 2px;
+	padding: 10px;
+	border: 2px solid black;
+	background-color: white;
+	text-align: left;
+}
+
+table.results {
+	/* display: none; changed to display: inline-block by table_compute(); */
+	display: none;
+	border: 2px solid black;
+	border-spacing: 0px;
+	position: relative;
+	top: 50px;
+}
+
+table.results tbody tr td {
+	width: 100px;
+	height: 25px;
+	border: 1px solid;
+}
+
+td.title {
+	text-align: center;
+}
+
+td.price, td.mpg {
+	background-color: black;
+	color: white;
+	text-align: right;
+	padding-right: 5px;
+}
+
+td.cell {
+	padding-right: 5px;
+	text-align: right;
+}
+
+table.defaults {
+	display: none;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+p.note {
+	display: none;
+}

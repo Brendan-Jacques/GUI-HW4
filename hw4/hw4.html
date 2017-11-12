@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+ Name: Brendan Jacques, brendan_jacques@student.uml.edu
+ Student - Computer Science Major, UMass Lowell
+ Comp.4610, GUI Programming I
+ File: /usr/cs/2018/bjacques/public_html/461f2017/hw4/hw4.html
+ Created: 6-November-2017
+-->
+<html>
+  <head>
+    <title>
+      Assignment 4
+    </title>
+    <link rel="stylesheet" type="text/css" href="./css/hw4.css">
+  </head>
+  <body>
+    <h1>
+      <b>Assignment 4</b>
+    </h1>
+    <div class="center">
+      <form>
+      	<p>How many cars do you want to compare? : <input id="input_field_num" type="number"> <input type="button" value="Submit" onclick="field_generate()"></p>
+      </form>
+      <form>
+      	<table id="defaults" class="defaults">
+        	<tr>
+        		<td>*Please fill in all required fields.</td>
+        	</tr>
+        	<tr>
+        		<td>*Price per Gallon:</td> 
+        		<td><input id="per_gallon" type='number'/></td>
+        	</tr>
+        	<tr>
+        		<td>*Expected Miles Per Month:</td> 
+        		<td><input id="miles_per_month" type='number'/></td>
+        	</tr>
+        </table>
+       	<p id="note1" class="note">If "Price per Gallon" or "Expected Miles" are not given values, they will default to 0.</p>
+        <table id="fields"></table>
+        <p id="note2" class="note">Note: If any information given about a car is missing or incorrect, that car's data will not appear on the table.<br /></p>
+        <input type="button" onclick="table_compute()" value="Submit" id="submit" class="submit" />
+      </form>
+      <table id="results" class="results">
+        <tr id="first_row" class="result-titles">
+			<!-- Use table_compute to insert header cells for each price. -->
+        </tr>
+        <!-- Sample Row that table_compute will make
+		<tr>
+			<td>"+ mpg_current  +"</td>
+			<td>($/mo, $/mi)11</td> (Duplicate for # of prices given).
+		</tr>
+         -->
+        <!-- <span id="test"></span> */ -->
+      </table>
+    </div>
+    <script src="./js/hw4.js"></script>
+  </body>
+</html>

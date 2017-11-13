@@ -1,7 +1,29 @@
+/*
+ Name: Brendan Jacques, brendan_jacques@student.uml.edu
+ Student - Computer Science Major, UMass Lowell
+ Comp.4610, GUI Programming I
+ File: /usr/cs/2018/bjacques/public_html/461f2017/hw4/css/hw4.css
+ Created: 6-November-2017
+*/
+
+/* Sets the background color for the page. */
 body {
 	background-color: lightgrey;
 }
 
+/* Determines the position of the table for default value entries (price per gallon, miles per year). */
+table.defaults {
+	display: none;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* Sets user notes to display: none, that way they're not visible until field_generate alters their style to make them appear; */
+p.note {
+	display: none;
+}
+
+/* Properties of the submit button. */
 input.submit {
 	/* display: none; changed to display: inline-block by field_generate(); */
 	display: none;
@@ -10,6 +32,7 @@ input.submit {
 	width: 100px;
 }
 
+/* Properties of each entry field generated (Price, miles per gallon, etc.) */
 tbody.field {
 	display: inline-block;
 	width: 350px;
@@ -20,6 +43,8 @@ tbody.field {
 	text-align: left;
 }
 
+
+/* Properties of the dynamic table */
 table.results {
 	/* display: none; changed to display: inline-block by table_compute(); */
 	display: none;
@@ -29,16 +54,19 @@ table.results {
 	top: 50px;
 }
 
+/* Properties of the table cells in the dynamic table */
 table.results tbody tr td {
-	width: 100px;
+	width: 150px;
 	height: 25px;
 	border: 1px solid;
 }
 
-td.title {
+/* Sets the text-align for just the top-left cell in the dynamic table */
+table.results td.title {
 	text-align: center;
 }
 
+/* Properties of the first row and first column cells in the dynamic table */
 td.price, td.mpg {
 	background-color: black;
 	color: white;
@@ -46,17 +74,8 @@ td.price, td.mpg {
 	padding-right: 5px;
 }
 
+/* Properties of the dynamic cells in the dynamic table. */
 td.cell {
 	padding-right: 5px;
 	text-align: right;
-}
-
-table.defaults {
-	display: none;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-p.note {
-	display: none;
 }
